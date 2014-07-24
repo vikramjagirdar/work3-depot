@@ -22,6 +22,7 @@ class LineItemsController < ApplicationController
   # GET /line_items/1
   # GET /line_items/1.json
   def show
+    
     @line_item = LineItem.find(params[:id])
 
     respond_to do |format|
@@ -33,7 +34,7 @@ class LineItemsController < ApplicationController
   # GET /line_items/new
   # GET /line_items/new.json
   def new
-    @line_item = LineItem.new
+        @line_item = LineItem.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -49,6 +50,7 @@ class LineItemsController < ApplicationController
   # POST /line_items
   # POST /line_items.json
   def create
+    
     @cart = current_cart
     product = Product.find(params[:product_id])
     
@@ -58,7 +60,7 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to store_url }
-        format.js { @current_item = @line_item}
+        format.js 
         format.json { render json: @line_item,
           status: :created, location: @line_item }
       else

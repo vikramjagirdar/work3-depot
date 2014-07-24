@@ -54,8 +54,14 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        if current_user == 2
         format.html { redirect_to users_url,
           notice: "User #{@user.name} was successfully created." }
+        else
+          format.html { redirect_to store_url,
+          notice: "User #{@user.name} was successfully created." }
+        end
+
         format.json { render json: @user,
           status: :created, location: @user }
       else

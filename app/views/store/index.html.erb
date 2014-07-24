@@ -14,7 +14,12 @@
 <!-- START_HIGHLIGHT -->
       <%= button_to 'Add to Cart', line_items_path(product_id: product),
         remote: true %>
-<!-- END_HIGHLIGHT -->
+   
+        <%= link_to 'Add a Rating', new_rate_path(product_id: product) %>
+   
+        <p id=rate><%= average_rating(product.id)%> out of 5 </p>
+
+        <!-- END_HIGHLIGHT -->
     </div>
   </div>
 <% end %>

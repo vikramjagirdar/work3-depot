@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'jquery-raty-rails'
 gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
@@ -37,3 +37,5 @@ gem 'byebug'
 
 # To use debugger
 # gem 'debugger'
+gem 'better_errors'
+

@@ -32,7 +32,7 @@
         <li><a href="http://www..../contact">Contact</a></li>
       </ul>
        <% if session[:user_id] == nil %>
-       <%= button_to 'Login', login_path, method: :get %><%= button_to 'Sign up', login_path, method: :new %> 
+       <%= button_to 'Login', login_path, method: :get %>  <%= link_to 'New User', new_user_path %>
        <% end %>
        
        <% if session[:user_id]  %>

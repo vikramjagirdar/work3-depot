@@ -7,6 +7,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
+  resources :rates
+
+
   get 'admin' => 'admin#index'
 
   controller :sessions do

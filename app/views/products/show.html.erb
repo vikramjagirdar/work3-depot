@@ -7,7 +7,7 @@
 
 <p>
   <b>Description:</b>
-  <%= @product.description %>
+  <%=strip_tags(@product.description) %>
 </p>
 
 <p>
@@ -19,6 +19,11 @@
   <b>Price:</b>
   <%= @product.price %>
 </p>
+<p>
+
+	<b>Rating:</b>
+	<%= average_rating(@product.id) %>
+</p>	
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
