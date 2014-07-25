@@ -2,7 +2,8 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Your Pragmatic Catalog<p> <%= link_to 'Top rated', store_sort_product_path %></p></h1>
+<h1>Your Pragmatic Catalog</h1>
+<%= link_to 'Top rated', store_sort_product_path %>
 <% @products.each do |product| %>
   <div class="entry">
     <%= image_tag(product.image_url) %>

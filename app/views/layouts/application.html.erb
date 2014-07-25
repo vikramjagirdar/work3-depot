@@ -6,7 +6,6 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-
 </head>
 <!-- END:head -->
 <body class="<%= controller.controller_name %>">
@@ -33,9 +32,9 @@
         <li><a href="http://www..../contact">Contact</a></li>
       </ul>
        <% if session[:user_id] == nil %>
-       <%= button_to 'Login', login_path, method: :get %>  <%= link_to 'New User', new_user_path %>
+       <%= button_to 'Login', login_path, method: :get %>
        <% end %>
-       
+       <%= button_to 'New user', new_user_path, method: :get %>
        <% if session[:user_id]  %>
         <% if session[:user_id]== 2  %>
         

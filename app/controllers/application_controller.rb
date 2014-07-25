@@ -10,29 +10,39 @@ class ApplicationController < ActionController::Base
   before_filter :authorize
   protect_from_forgery
 
+def average_rating (product_id)
+  #byebug
+    Rate.where("product_id="+product_id.to_s).average("rating").to_f
+    
+ 
+  end
+
+
+
   private
 
         def current_cart 
-      Cart.find(session[:cart_id])
-    rescue ActiveRecord::RecordNotFound
+          Cart.find(session[:cart_id])
+       rescue ActiveRecord::RecordNotFound
       cart = Cart.create
       session[:cart_id] = cart.id
       cart
     end
 
-    # ...
+       # ...
 
-    private
+    
 
         def current_user
           session[:user_id]
         end
 
-  protected
+   protected
 
     def authorize
       unless User.find_by_id(session[:user_id])
         redirect_to login_url, notice: "Please log in"
-      end
+     end
     end
 end
+

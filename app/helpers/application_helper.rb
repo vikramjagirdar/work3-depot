@@ -13,4 +13,16 @@ module ApplicationHelper
     
  
   end
+
+
+
+
+ def child(product_id)
+ 	Rate.where("product_id="+product_id.to_s)
+ end
+
+ def temp(user_id)
+ 	User.where("user_id="+user_id.to_s).name
+ end
+
 end

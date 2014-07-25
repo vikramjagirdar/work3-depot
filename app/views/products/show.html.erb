@@ -24,7 +24,16 @@
 	<b>Rating:</b>
 	<%= average_rating(@product.id) %>
 </p>	
+<p>
+
+	<b>Reviews:</b>
+	<% child(@product.id).each do |f| %>  
+	<p><%= f.review%></p>     <p>"posted by "<%=  temp(f.user_id)%></p>
+	<% end %>
+    	
+</p>	
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
+
 <%= link_to 'Back', products_path %>

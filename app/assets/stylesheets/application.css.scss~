@@ -13,6 +13,9 @@
  *= require_self
  *= require_tree .
  */
+body {
+    background-color: #d0e4fe;
+}
 
 #banner {
   background: #9c9;
@@ -37,7 +40,7 @@
 }
 
 #columns {
-  background: #FFF200;
+  background: red;
 
   #main {
     margin-left: 17em;
@@ -50,7 +53,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #FFF200;
+    background: red;
 
 /* START_HIGHLIGHT */
     form, div {
@@ -63,6 +66,7 @@
 
     #cart {
       font-size: smaller;
+      font-style: italic;
       color:     white;
 
       table {
@@ -95,7 +99,7 @@
     background: #efe;
     legend {
       color: #dfd;
-      background: #FFF200;
+      background: red;
       font-family: sans-serif;
       padding: 0.2em 1em;
     }

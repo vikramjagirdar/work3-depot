@@ -37,5 +37,5 @@ gem 'byebug'
 
 # To use debugger
 # gem 'debugger'
-gem 'better_errors'
-gem 'rails3-jquery-autocomplete'
+# gem 'better_errors'
+
