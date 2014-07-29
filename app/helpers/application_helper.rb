@@ -1,7 +1,8 @@
 module ApplicationHelper
 	def hidden_div_if(condition, attributes = {}, &block)
+
 		
-		if condition.nil? || condition.line_items.empty?
+		if condition
 			attributes["style"] = "display: none"
 		end
 		content_tag("div", attributes, &block)
@@ -22,7 +23,7 @@ module ApplicationHelper
  end
 
  def temp(user_id)
- 	User.where("user_id="+user_id.to_s).name
+ 	User.find(user_id).name
  end
 
 end

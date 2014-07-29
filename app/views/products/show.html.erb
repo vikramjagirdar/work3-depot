@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
+
+ <%= image_tag(@product.image_url) %>
 <p>
   <b>Title:</b>
   <%= @product.title %>
@@ -10,30 +12,44 @@
   <%=strip_tags(@product.description) %>
 </p>
 
-<p>
-  <b>Image url:</b>
-  <%= @product.image_url %>
-</p>
+
+ 
+ 
+
 
 <p>
   <b>Price:</b>
-  <%= @product.price %>
+  <%= number_to_currency(@product.price) %>
 </p>
 <p>
 
 	<b>Rating:</b>
-	<%= average_rating(@product.id) %>
+	<%= "%.2f" % average_rating(@product.id) %>
 </p>	
 <p>
 
 	<b>Reviews:</b>
 	<% child(@product.id).each do |f| %>  
-	<p><%= f.review%></p>     <p>"posted by "<%=  temp(f.user_id)%></p>
+	<hr>
+	
+	<i class="icon-pencil icon-white"></i><h5 style="font-style:italic;display:inline;"><%= "#{temp(f.user_id)}"%></h5>
+	<p style="font-size:x-small;, font-style:italic"><%= "#{((Time.now()-f.created_at)/86400).ceil} days ago"%></p>
+	<!-- <i class="icon-star icon-white"></i><p style="font-style:italic;display:inline;"><%= "#{f.rating}"%></p> -->
+	<% f.rating.times do %>
+	<i class="icon-star"></i>
+	<%end%>
+	<br>
+	<p><%= f.review%></p> 
+	<!-- <p style="font-style:italic; font-size:120;"><%= "posted by #{temp(f.user_id)}"%></p>  -->
 	<% end %>
+	<hr>
     	
 </p>	
 
-
+<% if @product.id ==2 %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 
 <%= link_to 'Back', products_path %>
+<% else %>
+<%= link_to 'Back', store_sort_product_path%>
+<% end %>

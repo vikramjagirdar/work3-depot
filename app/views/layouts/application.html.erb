@@ -11,30 +11,44 @@
 <body class="<%= controller.controller_name %>">
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || "SHOPPE18" %>
+     
   </div>
   <div id="columns">
     <div id="side">
 <!-- START_HIGHLIGHT -->
       <!-- START:hidden_div -->
     <% if @cart %> 
-      <%= hidden_div_if(@cart, id: 'cart') do %>
+
+      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
         <%= render @cart %>
       <% end %>
     <% end %>
     <!-- END:hidden_div -->
 
 <!-- END_HIGHLIGHT -->
-      <ul>
+<ul>
+        <li id ="home"><a href=<%="#{store_url}"%>>Home</a></li>
+        <!-- <li id ="cont"><a href="http://www..../contact">Contact</a></li> -->
+        <li><%= link_to 'Top rated', store_sort_product_path %></li>
+        
+        <li><% if session[:user_id] == nil %>
+       <%= link_to 'Login', login_path, method: :get %>
+       <li><%= link_to 'Sign up', new_user_path, method: :get %></li>
+       <%else%>
+
+       <%= link_to 'Logout', logout_path, method: :delete %>
+       <% end %>
+       </li>
+       
+      </ul>
+     <!--  <ul>
         <li><a href="http://www....">Home</a></li>
         <li><a href="http://www..../faq">Questions</a></li>
         <li><a href="http://www..../news">News</a></li>
         <li><a href="http://www..../contact">Contact</a></li>
-      </ul>
-       <% if session[:user_id] == nil %>
-       <%= button_to 'Login', login_path, method: :get %>
-       <% end %>
-       <%= button_to 'New user', new_user_path, method: :get %>
+      </ul> -->
+       
        <% if session[:user_id]  %>
         <% if session[:user_id]== 2  %>
         
@@ -44,7 +58,7 @@
         <li><%= link_to 'Users',users_path%></li>
         </ul>
          <% end %>         
-        <%= button_to 'Logout', logout_path, method: :delete %>
+        
         <% end %>
 
 

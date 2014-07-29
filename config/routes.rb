@@ -28,6 +28,8 @@ Depot::Application.routes.draw do
 
   get "store/index"
   get "store/sort_product"
+  get "products/show"
+  get "users/edit"
 
   resources :products do
     get :who_bought, on: :member

@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class UsersController < ApplicationController
-  skip_before_filter :authorize, only: [:create, :new, :index]
+  skip_before_filter :authorize, only: [:create, :new, :index, :show,:update]
 
   # GET /users
   # GET /users.json
@@ -45,6 +45,7 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+
   end
 
   # POST /users
@@ -76,16 +77,33 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
+    
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
-        format.html { redirect_to users_url,
-          notice: "User #{@user.name} was successfully updated." }
-        format.json { head :no_content }
+        if @user.authenticate(params[:user][:password_old] )
+          byebug
+        @user.password = params[:user][:password]
+        @user.password_confirmation = params[:user][:password_confirmation]
+
+        if @user.save
+          format.html { redirect_to store_url,
+             notice: "User #{@user.name} was successfully updated." }
+            format.json { head :no_content }
+        # if @user.update_attributes(params[:user])
+        #   format.html { redirect_to store_url,
+        #     notice: "User #{@user.name} was successfully updated." }
+        #   format.json { head :no_content }
+        else
+            format.html { render action: "edit" }
+           format.json { render json: @user.errors,
+             status: :unprocessable_entity }
+        end
       else
-        format.html { render action: "edit" }
+        format.html {render action: "edit", notice: "Invalid password"}
         format.json { render json: @user.errors,
-          status: :unprocessable_entity }
+            status: :unprocessable_entity }
+
+
       end
     end
   end
