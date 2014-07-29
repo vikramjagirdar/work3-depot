@@ -11,6 +11,8 @@
     color: #226;
     border-bottom: 3px dotted #77d;
   }
+  ///////////////////////////
+  
 
   /* An entry in the store catalog */
   .entry {
@@ -53,12 +55,11 @@
 
 
       }
-      a:hover {
-      
-     background-color: transparent;
-     color: black;
+     #link{
 
-      }
+color: white;
+
+     }
 
       /* START_HIGHLIGHT */
       form, div {

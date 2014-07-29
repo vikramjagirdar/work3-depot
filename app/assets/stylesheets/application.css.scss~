@@ -54,6 +54,10 @@
     padding: 1em 2em;
     width: 13em;
     background: #008080;
+  a:hover{
+   background-color:transparent;
+    color: black;
+    }
 
 /* START_HIGHLIGHT */
     form, div {
@@ -107,7 +111,7 @@
   }
   form {
     label {
-      width: 5em;
+      width: 6em;
       float: left;
       text-align: right;
       padding-top: 0.7em;
@@ -119,7 +123,7 @@
     select, textarea, input {
       position:relative;
       
-      margin-left: 0.7em;
+      margin-left: 0.9em;
     }
 
     .submit {

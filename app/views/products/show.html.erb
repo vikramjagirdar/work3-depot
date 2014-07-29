@@ -33,7 +33,7 @@
 	<hr>
 	
 	<i class="icon-pencil icon-white"></i><h5 style="font-style:italic;display:inline;"><%= "#{temp(f.user_id)}"%></h5>
-	<p style="font-size:x-small;, font-style:italic"><%= "#{((Time.now()-f.created_at)/86400).ceil} days ago"%></p>
+	<p style="font-size:x-small;, font-style:italic"><%= "#{((Time.now()-f.created_at)/86400).ceil} day ago"%></p>
 	<!-- <i class="icon-star icon-white"></i><p style="font-style:italic;display:inline;"><%= "#{f.rating}"%></p> -->
 	<% f.rating.times do %>
 	<i class="icon-star"></i>
@@ -51,5 +51,5 @@
 
 <%= link_to 'Back', products_path %>
 <% else %>
-<%= link_to 'Back', store_sort_product_path%>
+<%= link_to 'Back', store_sort_product_path, class: "btn btn-default"	%>
 <% end %>

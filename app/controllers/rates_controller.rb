@@ -45,6 +45,10 @@ class RatesController < ApplicationController
   # GET /rates/1/edit
   def edit
     @rate = Rate.find(params[:id])
+    if(@rate.user_id != session[:user_id])
+      redirect_to login_url
+      return
+    end
   end
 
   # POST /rates
@@ -72,7 +76,7 @@ class RatesController < ApplicationController
 
     respond_to do |format|
       if @rate.update_attributes(params[:rate])
-        format.html { redirect_to @rate, notice: 'Rate was successfully updated.' }
+        format.html { redirect_to store_url, notice: 'Rate was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

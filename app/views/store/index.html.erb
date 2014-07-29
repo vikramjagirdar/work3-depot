@@ -4,9 +4,11 @@
 
 <h1>Your Pragmatic Catalog
 <p style="margin-left:1500px;position:relative; top:-20px;"><% if session[:user_id] != nil %>
-        <a href= "users/<%="#{session[:user_id]}"%>/edit">Edit profile </a>
+        <a  href= "users/<%="#{session[:user_id]}"%>/edit" ><button type="button" class="btn btn-primary">Edit profile</button> </a>
         <%end%>
-      </p></h1>
+      </p>
+
+    </h1>
 <% @products.each do |product| %>
   <div class="entry">
     <%= image_tag(product.image_url) %>
@@ -15,10 +17,27 @@
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
 <!-- START_HIGHLIGHT -->
+
+
+
+
       <%= button_to 'Add to Cart', line_items_path(product_id: product),class: "btn btn-primary" , 
         remote: true %>
+        <% if session[:user_id] != nil and Rate.where(:user_id => session[:user_id],:product_id => product.id).length != 0  %>
+
+        
+        <a  href= "rates/<%="#{Rate.where(:user_id=>session[:user_id], :product_id => product.id)[0].id}"%>/edit"><button type="button" class="btn btn-primary">Edit rating</button> </a>
+        
+      <% else %>
+
+
+
+<%= link_to  'Add a Rating', new_rate_path(product_id: product), id: "link" ,class: "btn btn-primary" %>
+
+
+<% end %>
    
-        <%= link_to  'Add a Rating', new_rate_path(product_id: product), id: "link"  %>
+        
    
         <p id="rate"><%= "%.2f" %average_rating(product.id)%>/5 </p>
         

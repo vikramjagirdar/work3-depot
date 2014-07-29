@@ -44,7 +44,9 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    
     @user = User.find(params[:id])
+
 
   end
 
@@ -81,7 +83,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
         if @user.authenticate(params[:user][:password_old] )
-          byebug
+         
         @user.password = params[:user][:password]
         @user.password_confirmation = params[:user][:password_confirmation]
 
@@ -94,12 +96,16 @@ class UsersController < ApplicationController
         #     notice: "User #{@user.name} was successfully updated." }
         #   format.json { head :no_content }
         else
+         
             format.html { render action: "edit" }
+
            format.json { render json: @user.errors,
              status: :unprocessable_entity }
         end
       else
-        format.html {render action: "edit", notice: "Invalid password"}
+        
+        format.html {render action: "edit", 
+          notice: "Invalid password" }
         format.json { render json: @user.errors,
             status: :unprocessable_entity }
 

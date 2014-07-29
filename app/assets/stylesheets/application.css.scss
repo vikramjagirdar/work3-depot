@@ -54,6 +54,10 @@
     padding: 1em 2em;
     width: 13em;
     background: #008080;
+  a:hover{
+   background-color:transparent;
+    color: black;
+    }
 
 /* START_HIGHLIGHT */
     form, div {
@@ -100,14 +104,14 @@
     background: #efe;
     legend {
       color: #dfd;
-      background: #141;
+      background: #008080;
       font-family: sans-serif;
       padding: 0.2em 1em;
     }
   }
   form {
     label {
-      width: 5em;
+      width: 6em;
       float: left;
       text-align: right;
       padding-top: 0.7em;
