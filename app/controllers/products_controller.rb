@@ -4,7 +4,10 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-
+if(session[:user_id] != 2)
+      redirect_to store_url,notice: "Invalid permissions"
+      return
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -15,6 +18,10 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    # if(session[:user_id] != 2)
+    #   redirect_to store_url,notice: "Invalid permissions"
+    #   return
+    #end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,6 +43,10 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+     if(session[:user_id] != 2)
+       redirect_to store_url,notice: "Invalid permissions"
+       return
+    end
   end
 
   # POST /products

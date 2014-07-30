@@ -46,7 +46,7 @@ class RatesController < ApplicationController
   def edit
     @rate = Rate.find(params[:id])
     if(@rate.user_id != session[:user_id])
-      redirect_to login_url
+      redirect_to store_url, notice: "Invalid permission"
       return
     end
   end

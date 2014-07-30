@@ -13,6 +13,10 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.order(:name)
+    if(session[:user_id] != 2)
+      redirect_to store_url,notice: "Invalid permissions"
+      return
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,6 +28,10 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    if(session[:user_id] != @user.id)
+      redirect_to store_url,notice: "Invalid permissions"
+      return
+    end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -46,7 +54,10 @@ class UsersController < ApplicationController
   def edit
     
     @user = User.find(params[:id])
-
+if(session[:user_id] != @user.id)
+      redirect_to store_url,notice: "Invalid permissions"
+      return
+    end
 
   end
 
@@ -103,9 +114,10 @@ class UsersController < ApplicationController
              status: :unprocessable_entity }
         end
       else
-        
+        @temp2= "Invalid password, please type the correct password"
+        # logger.error "please type correct password#{params[:id]}"
         format.html {render action: "edit", 
-          notice: "Invalid password" }
+          notice: "Invalid password." }
         format.json { render json: @user.errors,
             status: :unprocessable_entity }
 
@@ -118,6 +130,10 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user = User.find(params[:id])
+    if(session[:user_id] == 2)
+      redirect_to store_url, notice: "can't delete a admin"
+      return
+    end
     begin
       @user.destroy
       flash[:notice] = "User #{@user.name} deleted"

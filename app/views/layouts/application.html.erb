@@ -10,7 +10,7 @@
 <!-- END:head -->
 <body class="<%= controller.controller_name %>">
   <div id="banner">
-    <%= image_tag("logo.png") %>
+   
     <%= @page_title || "SHOPPE18" %>
      
   </div>
@@ -27,7 +27,7 @@
     <!-- END:hidden_div -->
 
 <!-- END_HIGHLIGHT -->
-<ul>
+<ul >
         <li id ="home"><a href=<%="#{store_url}"%>>Home</a></li>
         <!-- <li id ="cont"><a href="http://www..../contact">Contact</a></li> -->
         <li><%= link_to 'Top rated', store_sort_product_path %></li>
