@@ -1,0 +1,107 @@
+[2014-08-28 11:22:00,725][INFO ][cluster.metadata         ] [Aegis] [users_development] creating index, cause [api], shards [1]/[1], mappings [user]
+[2014-08-28 11:22:00,830][INFO ][cluster.metadata         ] [Aegis] [invention_requests_development] creating index, cause [api], shards [1]/[1], mappings [invention_request]
+[2014-08-28 11:22:01,032][INFO ][cluster.metadata         ] [Aegis] [salesforce_inventions_development] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention]
+[2014-08-28 11:22:01,072][INFO ][cluster.metadata         ] [Aegis] [salesforce_invention_inventors_development] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention_inventor]
+[2014-08-28 11:22:01,114][INFO ][cluster.metadata         ] [Aegis] [salesforce_invention_requests_development] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention_request]
+[2014-08-28 11:33:49,964][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 11:33:51,465][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 13:14:50,115][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.67:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 13:14:51,616][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.67:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:05:55,834][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:05:57,335][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:07:30,616][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:07:32,117][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:08:36,128][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:08:37,630][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:10:41,067][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 15:10:42,568][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 16:35:51,301][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 16:35:52,803][WARN ][discovery.zen.ping.multicast] [Aegis] failed to read requesting data from /192.168.7.64:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-28 18:14:07,457][INFO ][node                     ] [Aegis] stopping ...
+[2014-08-28 18:14:07,502][INFO ][node                     ] [Aegis] stopped
+[2014-08-28 18:14:07,502][INFO ][node                     ] [Aegis] closing ...
+[2014-08-28 18:14:07,505][INFO ][node                     ] [Aegis] closed

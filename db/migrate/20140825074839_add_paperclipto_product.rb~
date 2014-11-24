@@ -1,0 +1,8 @@
+class AddPapercliptoProduct < ActiveRecord::Migration
+add_attachment :Product, :image  
+  def up
+  end
+
+  def down
+  end
+end

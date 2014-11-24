@@ -1,0 +1,141 @@
+[2014-08-19 16:22:26,316][INFO ][node                     ] [Barnacle] version[0.90.9], pid[11130], build[a968646/2013-12-23T10:35:28Z]
+[2014-08-19 16:22:26,316][INFO ][node                     ] [Barnacle] initializing ...
+[2014-08-19 16:22:26,319][INFO ][plugins                  ] [Barnacle] loaded [], sites [head]
+[2014-08-19 16:22:27,692][INFO ][node                     ] [Barnacle] initialized
+[2014-08-19 16:22:27,692][INFO ][node                     ] [Barnacle] starting ...
+[2014-08-19 16:22:27,744][INFO ][transport                ] [Barnacle] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.7.83:9300]}
+[2014-08-19 16:22:30,762][INFO ][cluster.service          ] [Barnacle] new_master [Barnacle][5hRS2evsQX2HZQ75RSlWUA][inet[/192.168.7.83:9300]], reason: zen-disco-join (elected_as_master)
+[2014-08-19 16:22:30,769][WARN ][discovery.zen.ping.multicast] [Barnacle] received ping response ping_response{target [[Vivisector][IU39VNoXQy2k5sGnbnF3Qw][inet[/192.168.7.23:9300]]], master [[Vivisector][IU39VNoXQy2k5sGnbnF3Qw][inet[/192.168.7.23:9300]]], cluster_name[elasticsearch]} with no matching id [1]
+[2014-08-19 16:22:30,769][WARN ][discovery.zen.ping.multicast] [Barnacle] received ping response ping_response{target [[Vivisector][IU39VNoXQy2k5sGnbnF3Qw][inet[/192.168.7.23:9300]]], master [[Vivisector][IU39VNoXQy2k5sGnbnF3Qw][inet[/192.168.7.23:9300]]], cluster_name[elasticsearch]} with no matching id [1]
+[2014-08-19 16:22:30,783][INFO ][discovery                ] [Barnacle] elasticsearch/5hRS2evsQX2HZQ75RSlWUA
+[2014-08-19 16:22:30,792][INFO ][http                     ] [Barnacle] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.7.83:9200]}
+[2014-08-19 16:22:30,793][INFO ][node                     ] [Barnacle] started
+[2014-08-19 16:22:30,804][INFO ][gateway                  ] [Barnacle] recovered [0] indices into cluster_state
+[2014-08-19 16:28:00,743][INFO ][cluster.metadata         ] [Barnacle] [products] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-19 16:28:00,926][INFO ][cluster.metadata         ] [Barnacle] [products] update_mapping [product] (dynamic)
+[2014-08-19 18:05:15,992][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:05:17,491][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:09:45,372][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:09:46,874][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:10:55,681][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:10:57,182][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:12:56,163][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:12:57,665][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:13:02,814][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:13:04,315][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:15:49,153][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:15:50,654][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:46:18,742][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:46:20,243][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:46:53,396][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:46:54,897][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:47:33,729][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)
+[2014-08-19 18:47:35,229][WARN ][discovery.zen.ping.multicast] [Barnacle] failed to read requesting data from /192.168.7.11:54328
+java.io.IOException: Expected handle header, got [13]
+	at org.elasticsearch.common.io.stream.HandlesStreamInput.readString(HandlesStreamInput.java:65)
+	at org.elasticsearch.cluster.ClusterName.readFrom(ClusterName.java:64)
+	at org.elasticsearch.cluster.ClusterName.readClusterName(ClusterName.java:58)
+	at org.elasticsearch.discovery.zen.ping.multicast.MulticastZenPing$Receiver.run(MulticastZenPing.java:409)
+	at java.lang.Thread.run(Thread.java:701)

@@ -1,0 +1,195 @@
+<!-- START:head -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pragprog Books Online Store</title>
+  <link href="/assets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/admin.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap_and_overrides.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/carts.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/line_items.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/orders.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/products.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/rates.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/scaffolds.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/sessions.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/store.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/users.css?body=1" media="all" rel="stylesheet" type="text/css" />
+  <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery-ui.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-transition.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-alert.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-modal.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-tab.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-popover.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-button.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap/bootstrap-affix.js?body=1" type="text/javascript"></script>
+<script src="/assets/twitter/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="/assets/admin.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="/assets/carts.js?body=1" type="text/javascript"></script>
+<script src="/assets/line_items.js?body=1" type="text/javascript"></script>
+<script src="/assets/orders.js?body=1" type="text/javascript"></script>
+<script src="/assets/products.js?body=1" type="text/javascript"></script>
+<script src="/assets/rates.js?body=1" type="text/javascript"></script>
+<script src="/assets/sessions.js?body=1" type="text/javascript"></script>
+<script src="/assets/store.js?body=1" type="text/javascript"></script>
+<script src="/assets/users.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="NPY2ZNYbbA3kJgZMGVa8kal9KEs3jfvPrMj4UBRUWnQ=" name="csrf-token" />
+</head>
+<!-- END:head -->
+<body class="products">
+  <div id="banner">
+   
+    SHOPPE18
+     
+  </div>
+  <div id="columns">
+    <div id="side">
+<!-- START_HIGHLIGHT -->
+      <!-- START:hidden_div -->
+    <!-- END:hidden_div -->
+
+<!-- END_HIGHLIGHT -->
+<ul >
+        <li id ="home"><a href=http://localhost:3000/>Home</a></li>
+        <!-- <li id ="cont"><a href="http://www..../contact">Contact</a></li> -->
+        <li><a href="/store/sort_product">Top rated</a></li>
+        
+        <li>      
+       <a href="/logout" data-method="delete" rel="nofollow">Logout</a>
+       </li>
+       
+      </ul>
+     <!--  <ul>
+        <li><a href="http://www....">Home</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
+      </ul> -->
+       
+        
+        <ul>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/users">Users</a></li>
+        </ul>
+        
+
+
+    </div>
+    <div id="main">
+      <h1>Listing products</h1>
+
+<table>
+<h1>Your Pragmatic Catalog
+
+<!-- <form accept-charset="UTF-8" action="/products" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div> -->
+<!-- <p><input id="query" name="query" type="text" /> -->
+<!-- <input type="submit" value="Search" /></p> -->
+<!-- </form> -->
+
+  <tr class="list_line_odd">
+
+    <td>
+      <img alt="Cs" class="list_image" src="/assets/cs.jpg" />
+    </td>
+
+    <td class="list_description">
+      <dl>
+        <dt>CoffeeScript</dt>
+        <dd>
+        CoffeeScript is JavaScript done right. It provides all of JavaScript...</dd>
+      </dl>
+    </td>
+
+    <td class="list_actions">
+      <a href="/products/1">Show</a><br/>
+      <a href="/products/1/edit">Edit</a><br/>
+      <!-- <a href="/products?sort=product.rate.rating">Top rated</a></br> -->
+      <a href="/products/1" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a>
+    </td>
+  </tr>
+  <tr class="list_line_even">
+
+    <td>
+      <img alt="Ruby" class="list_image" src="/assets/ruby.jpg" />
+    </td>
+
+    <td class="list_description">
+      <dl>
+        <dt>Programming Ruby 1.9</dt>
+        <dd>
+        Ruby is the fastest growing and most exciting dynamic language
+     ...</dd>
+      </dl>
+    </td>
+
+    <td class="list_actions">
+      <a href="/products/2">Show</a><br/>
+      <a href="/products/2/edit">Edit</a><br/>
+      <!-- <a href="/products?sort=product.rate.rating">Top rated</a></br> -->
+      <a href="/products/2" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a>
+    </td>
+  </tr>
+  <tr class="list_line_odd">
+
+    <td>
+      <img alt="Rtp" class="list_image" src="/assets/rtp.jpg" />
+    </td>
+
+    <td class="list_description">
+      <dl>
+        <dt>Rails Test Prescriptions</dt>
+        <dd>
+        Rails Test Prescriptions is a comprehensive guide to testing
+       ...</dd>
+      </dl>
+    </td>
+
+    <td class="list_actions">
+      <a href="/products/3">Show</a><br/>
+      <a href="/products/3/edit">Edit</a><br/>
+      <!-- <a href="/products?sort=product.rate.rating">Top rated</a></br> -->
+      <a href="/products/3" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a>
+    </td>
+  </tr>
+  <tr class="list_line_even">
+
+    <td>
+      <img alt="Hcv1" class="list_image" src="http://home.iitk.ac.in/~abansal/hss/images/hcv1.jpg" />
+    </td>
+
+    <td class="list_description">
+      <dl>
+        <dt>concepts of physics by HC verma</dt>
+        <dd>very good book</dd>
+      </dl>
+    </td>
+
+    <td class="list_actions">
+      <a href="/products/4">Show</a><br/>
+      <a href="/products/4/edit">Edit</a><br/>
+      <!-- <a href="/products?sort=product.rate.rating">Top rated</a></br> -->
+      <a href="/products/4" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<a href="/products/new">New product</a>
+
+    </div>
+  </div>
+</body>
+</html>

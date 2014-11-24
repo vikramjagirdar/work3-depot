@@ -1,0 +1,285 @@
+[2014-08-27 19:05:49,727][INFO ][node                     ] [Aegis] version[0.90.9], pid[2290], build[a968646/2013-12-23T10:35:28Z]
+[2014-08-27 19:05:49,727][INFO ][node                     ] [Aegis] initializing ...
+[2014-08-27 19:05:49,732][INFO ][plugins                  ] [Aegis] loaded [], sites [head]
+[2014-08-27 19:05:51,224][INFO ][node                     ] [Aegis] initialized
+[2014-08-27 19:05:51,224][INFO ][node                     ] [Aegis] starting ...
+[2014-08-27 19:05:51,277][INFO ][transport                ] [Aegis] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.7.83:9300]}
+[2014-08-27 19:05:54,295][INFO ][cluster.service          ] [Aegis] new_master [Aegis][OKfhUcJQQY6f1ffOy_oihw][inet[/192.168.7.83:9300]], reason: zen-disco-join (elected_as_master)
+[2014-08-27 19:05:54,323][INFO ][discovery                ] [Aegis] elasticsearch/OKfhUcJQQY6f1ffOy_oihw
+[2014-08-27 19:05:54,333][INFO ][http                     ] [Aegis] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.7.83:9200]}
+[2014-08-27 19:05:54,334][INFO ][node                     ] [Aegis] started
+[2014-08-27 19:05:54,619][INFO ][gateway                  ] [Aegis] recovered [1] indices into cluster_state
+[2014-08-27 19:06:03,432][INFO ][cluster.metadata         ] [Aegis] [asset_reviews_test] creating index, cause [api], shards [5]/[1], mappings [asset_review]
+[2014-08-27 19:06:03,682][INFO ][cluster.metadata         ] [Aegis] [candidates_test] creating index, cause [api], shards [1]/[1], mappings [candidate]
+[2014-08-27 19:06:03,904][INFO ][cluster.metadata         ] [Aegis] [customer_permission_profiles_test] creating index, cause [api], shards [1]/[1], mappings [customer_permission_profile]
+[2014-08-27 19:06:04,470][INFO ][cluster.metadata         ] [Aegis] [users_test] creating index, cause [api], shards [1]/[1], mappings [user]
+[2014-08-27 19:06:04,640][INFO ][cluster.metadata         ] [Aegis] [iif_users_test] creating index, cause [api], shards [1]/[1], mappings [iif_user]
+[2014-08-27 19:06:04,825][INFO ][cluster.metadata         ] [Aegis] [invention_requests_test] creating index, cause [api], shards [1]/[1], mappings [invention_request]
+[2014-08-27 19:06:04,936][INFO ][cluster.metadata         ] [Aegis] [inventions_test] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:05,046][INFO ][cluster.metadata         ] [Aegis] [inventors_test] creating index, cause [api], shards [1]/[1], mappings [inventor]
+[2014-08-27 19:06:05,192][INFO ][cluster.metadata         ] [Aegis] [patent_reviewers_test] creating index, cause [api], shards [5]/[1], mappings [patent_reviewer]
+[2014-08-27 19:06:05,317][INFO ][cluster.metadata         ] [Aegis] [products_test] creating index, cause [api], shards [1]/[1], mappings [product]
+[2014-08-27 19:06:05,424][INFO ][cluster.metadata         ] [Aegis] [salesforce_invention_requests_test] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention_request]
+[2014-08-27 19:06:05,624][INFO ][cluster.metadata         ] [Aegis] [user_rewards_test] creating index, cause [api], shards [1]/[1], mappings [user_reward]
+[2014-08-27 19:06:05,729][INFO ][cluster.metadata         ] [Aegis] [asset_review_patent_reviewers_test] creating index, cause [api], shards [5]/[1], mappings [asset_review_patent_reviewer]
+[2014-08-27 19:06:05,827][INFO ][cluster.metadata         ] [Aegis] [cached_cvs_test] creating index, cause [api], shards [1]/[1], mappings [cached_cv]
+[2014-08-27 19:06:06,000][INFO ][cluster.metadata         ] [Aegis] [members_test] creating index, cause [api], shards [1]/[1], mappings [member]
+[2014-08-27 19:06:06,198][INFO ][cluster.metadata         ] [Aegis] [runway_deals_test] creating index, cause [api], shards [1]/[1], mappings [runway/deal]
+[2014-08-27 19:06:06,312][INFO ][cluster.metadata         ] [Aegis] [salesforce_invention_inventors_test] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention_inventor]
+[2014-08-27 19:06:06,424][INFO ][cluster.metadata         ] [Aegis] [salesforce_inventions_test] creating index, cause [api], shards [1]/[1], mappings [salesforce_invention]
+[2014-08-27 19:06:06,511][INFO ][cluster.metadata         ] [Aegis] [salesforce_organizations_test] creating index, cause [api], shards [1]/[1], mappings [salesforce_organization]
+[2014-08-27 19:06:06,797][INFO ][cluster.metadata         ] [Aegis] [salesforce_contacts_test] creating index, cause [api], shards [1]/[1], mappings [salesforce_contact]
+[2014-08-27 19:06:07,747][INFO ][cluster.metadata         ] [Aegis] [cpc_keywords_test] creating index, cause [api], shards [1]/[1], mappings [cpc/keyword]
+[2014-08-27 19:06:08,951][INFO ][cluster.metadata         ] [Aegis] [1409146568.808277] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:09,293][INFO ][cluster.metadata         ] [Aegis] [1409146568.808277] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:09,409][INFO ][cluster.metadata         ] [Aegis] [1409146568.808277] deleting index
+[2014-08-27 19:06:09,445][INFO ][cluster.metadata         ] [Aegis] [1409146569.4199882] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:09,585][INFO ][cluster.metadata         ] [Aegis] [1409146569.4199882] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:09,662][INFO ][cluster.metadata         ] [Aegis] [1409146569.4199882] deleting index
+[2014-08-27 19:06:09,707][INFO ][cluster.metadata         ] [Aegis] [1409146569.6805246] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:09,864][INFO ][cluster.metadata         ] [Aegis] [1409146569.6805246] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:09,899][INFO ][cluster.metadata         ] [Aegis] [1409146569.6805246] deleting index
+[2014-08-27 19:06:09,936][INFO ][cluster.metadata         ] [Aegis] [1409146569.911595] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:10,075][INFO ][cluster.metadata         ] [Aegis] [1409146569.911595] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:10,220][INFO ][cluster.metadata         ] [Aegis] [1409146569.911595] deleting index
+[2014-08-27 19:06:10,269][INFO ][cluster.metadata         ] [Aegis] [1409146569.911595] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:10,328][INFO ][cluster.metadata         ] [Aegis] [1409146569.911595] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:10,384][INFO ][cluster.metadata         ] [Aegis] [1409146570.3614037] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:10,514][INFO ][cluster.metadata         ] [Aegis] [1409146570.3614037] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:10,554][INFO ][cluster.metadata         ] [Aegis] [1409146570.3614037] deleting index
+[2014-08-27 19:06:10,618][INFO ][cluster.metadata         ] [Aegis] [1409146570.5940711] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:10,757][INFO ][cluster.metadata         ] [Aegis] [1409146570.5940711] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:10,823][INFO ][cluster.metadata         ] [Aegis] [1409146570.5940711] deleting index
+[2014-08-27 19:06:10,865][INFO ][cluster.metadata         ] [Aegis] [1409146570.5940711] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:10,935][INFO ][cluster.metadata         ] [Aegis] [1409146570.5940711] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:10,982][INFO ][cluster.metadata         ] [Aegis] [1409146570.9611335] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:11,113][INFO ][cluster.metadata         ] [Aegis] [1409146570.9611335] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:11,149][INFO ][cluster.metadata         ] [Aegis] [1409146570.9611335] deleting index
+[2014-08-27 19:06:11,181][INFO ][cluster.metadata         ] [Aegis] [1409146571.158842] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:11,342][INFO ][cluster.metadata         ] [Aegis] [1409146571.158842] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:11,378][INFO ][cluster.metadata         ] [Aegis] [1409146571.158842] deleting index
+[2014-08-27 19:06:11,422][INFO ][cluster.metadata         ] [Aegis] [1409146571.398514] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:11,661][INFO ][cluster.metadata         ] [Aegis] [1409146571.398514] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:11,692][INFO ][cluster.metadata         ] [Aegis] [1409146571.398514] deleting index
+[2014-08-27 19:06:11,762][INFO ][cluster.metadata         ] [Aegis] [1409146571.7416] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:11,888][INFO ][cluster.metadata         ] [Aegis] [1409146571.7416] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:11,933][INFO ][cluster.metadata         ] [Aegis] [1409146571.7416] deleting index
+[2014-08-27 19:06:11,973][INFO ][cluster.metadata         ] [Aegis] [1409146571.9513109] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:12,106][INFO ][cluster.metadata         ] [Aegis] [1409146571.9513109] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:12,135][INFO ][cluster.metadata         ] [Aegis] [1409146571.9513109] deleting index
+[2014-08-27 19:06:12,174][INFO ][cluster.metadata         ] [Aegis] [1409146572.1529074] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:12,333][INFO ][cluster.metadata         ] [Aegis] [1409146572.1529074] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:12,397][INFO ][cluster.metadata         ] [Aegis] [1409146572.1529074] deleting index
+[2014-08-27 19:06:12,709][INFO ][cluster.metadata         ] [Aegis] [1409146572.6887488] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:12,834][INFO ][cluster.metadata         ] [Aegis] [1409146572.6887488] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:12,864][INFO ][cluster.metadata         ] [Aegis] [1409146572.6887488] deleting index
+[2014-08-27 19:06:12,893][INFO ][cluster.metadata         ] [Aegis] [1409146572.6887488] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:12,953][INFO ][cluster.metadata         ] [Aegis] [1409146572.6887488] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:13,071][INFO ][cluster.metadata         ] [Aegis] [1409146573.0515697] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:13,208][INFO ][cluster.metadata         ] [Aegis] [1409146573.0515697] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:13,261][INFO ][cluster.metadata         ] [Aegis] [1409146573.0515697] deleting index
+[2014-08-27 19:06:13,300][INFO ][cluster.metadata         ] [Aegis] [1409146573.2803457] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:13,428][INFO ][cluster.metadata         ] [Aegis] [1409146573.2803457] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:13,483][INFO ][cluster.metadata         ] [Aegis] [1409146573.2803457] deleting index
+[2014-08-27 19:06:13,520][INFO ][cluster.metadata         ] [Aegis] [1409146573.5002737] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:13,770][INFO ][cluster.metadata         ] [Aegis] [1409146573.5002737] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:13,820][INFO ][cluster.metadata         ] [Aegis] [1409146573.5002737] deleting index
+[2014-08-27 19:06:13,850][INFO ][cluster.metadata         ] [Aegis] [1409146573.831058] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:13,985][INFO ][cluster.metadata         ] [Aegis] [1409146573.831058] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:14,039][INFO ][cluster.metadata         ] [Aegis] [1409146573.831058] deleting index
+[2014-08-27 19:06:14,062][INFO ][cluster.metadata         ] [Aegis] [1409146573.831058] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:14,122][INFO ][cluster.metadata         ] [Aegis] [1409146573.831058] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:14,165][INFO ][cluster.metadata         ] [Aegis] [1409146574.1472635] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:14,285][INFO ][cluster.metadata         ] [Aegis] [1409146574.1472635] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:14,337][INFO ][cluster.metadata         ] [Aegis] [1409146574.1472635] deleting index
+[2014-08-27 19:06:14,375][INFO ][cluster.metadata         ] [Aegis] [inventions_test] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:19,160][INFO ][cluster.metadata         ] [Aegis] [1409146579.1423075] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:19,284][INFO ][cluster.metadata         ] [Aegis] [1409146579.1423075] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:19,313][INFO ][cluster.metadata         ] [Aegis] [1409146579.1423075] deleting index
+[2014-08-27 19:06:19,341][INFO ][cluster.metadata         ] [Aegis] [1409146579.1423075] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:19,389][INFO ][cluster.metadata         ] [Aegis] [1409146579.1423075] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:19,453][INFO ][cluster.metadata         ] [Aegis] [1409146579.435711] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:19,606][INFO ][cluster.metadata         ] [Aegis] [1409146579.435711] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:19,657][INFO ][cluster.metadata         ] [Aegis] [1409146579.435711] deleting index
+[2014-08-27 19:06:19,695][INFO ][cluster.metadata         ] [Aegis] [1409146579.6768565] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:19,855][INFO ][cluster.metadata         ] [Aegis] [1409146579.6768565] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:19,910][INFO ][cluster.metadata         ] [Aegis] [1409146579.6768565] deleting index
+[2014-08-27 19:06:20,099][INFO ][cluster.metadata         ] [Aegis] [1409146580.0809298] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:20,223][INFO ][cluster.metadata         ] [Aegis] [1409146580.0809298] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:20,251][INFO ][cluster.metadata         ] [Aegis] [1409146580.0809298] deleting index
+[2014-08-27 19:06:20,275][INFO ][cluster.metadata         ] [Aegis] [1409146580.0809298] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:06:20,330][INFO ][cluster.metadata         ] [Aegis] [1409146580.0809298] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:20,400][INFO ][cluster.metadata         ] [Aegis] [1409146580.381015] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:20,546][INFO ][cluster.metadata         ] [Aegis] [1409146580.381015] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:20,595][INFO ][cluster.metadata         ] [Aegis] [1409146580.381015] deleting index
+[2014-08-27 19:06:20,632][INFO ][cluster.metadata         ] [Aegis] [1409146580.615096] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:06:20,757][INFO ][cluster.metadata         ] [Aegis] [1409146580.615096] update_mapping [invention] (dynamic)
+[2014-08-27 19:06:20,805][INFO ][cluster.metadata         ] [Aegis] [1409146580.615096] deleting index
+[2014-08-27 19:12:29,335][INFO ][cluster.metadata         ] [Aegis] [1409146949.2084382] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:29,602][INFO ][cluster.metadata         ] [Aegis] [1409146949.2084382] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:29,636][INFO ][cluster.metadata         ] [Aegis] [1409146949.2084382] deleting index
+[2014-08-27 19:12:29,660][INFO ][cluster.metadata         ] [Aegis] [1409146949.643219] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:29,772][INFO ][cluster.metadata         ] [Aegis] [1409146949.643219] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:29,830][INFO ][cluster.metadata         ] [Aegis] [1409146949.643219] deleting index
+[2014-08-27 19:12:29,864][INFO ][cluster.metadata         ] [Aegis] [1409146949.845721] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:29,972][INFO ][cluster.metadata         ] [Aegis] [1409146949.845721] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:29,996][INFO ][cluster.metadata         ] [Aegis] [1409146949.845721] deleting index
+[2014-08-27 19:12:30,025][INFO ][cluster.metadata         ] [Aegis] [1409146950.0080335] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:30,135][INFO ][cluster.metadata         ] [Aegis] [1409146950.0080335] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:30,271][INFO ][cluster.metadata         ] [Aegis] [1409146950.0080335] deleting index
+[2014-08-27 19:12:30,319][INFO ][cluster.metadata         ] [Aegis] [1409146950.0080335] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:30,363][INFO ][cluster.metadata         ] [Aegis] [1409146950.0080335] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:30,413][INFO ][cluster.metadata         ] [Aegis] [1409146950.3959706] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:30,521][INFO ][cluster.metadata         ] [Aegis] [1409146950.3959706] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:30,545][INFO ][cluster.metadata         ] [Aegis] [1409146950.3959706] deleting index
+[2014-08-27 19:12:30,603][INFO ][cluster.metadata         ] [Aegis] [1409146950.5866873] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:30,712][INFO ][cluster.metadata         ] [Aegis] [1409146950.5866873] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:30,748][INFO ][cluster.metadata         ] [Aegis] [1409146950.5866873] deleting index
+[2014-08-27 19:12:30,792][INFO ][cluster.metadata         ] [Aegis] [1409146950.5866873] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:30,845][INFO ][cluster.metadata         ] [Aegis] [1409146950.5866873] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:30,889][INFO ][cluster.metadata         ] [Aegis] [1409146950.873422] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:31,000][INFO ][cluster.metadata         ] [Aegis] [1409146950.873422] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:31,028][INFO ][cluster.metadata         ] [Aegis] [1409146950.873422] deleting index
+[2014-08-27 19:12:31,055][INFO ][cluster.metadata         ] [Aegis] [1409146951.0390377] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:31,166][INFO ][cluster.metadata         ] [Aegis] [1409146951.0390377] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:31,193][INFO ][cluster.metadata         ] [Aegis] [1409146951.0390377] deleting index
+[2014-08-27 19:12:31,225][INFO ][cluster.metadata         ] [Aegis] [1409146951.2072494] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:31,454][INFO ][cluster.metadata         ] [Aegis] [1409146951.2072494] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:31,480][INFO ][cluster.metadata         ] [Aegis] [1409146951.2072494] deleting index
+[2014-08-27 19:12:31,543][INFO ][cluster.metadata         ] [Aegis] [1409146951.5265775] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:31,657][INFO ][cluster.metadata         ] [Aegis] [1409146951.5265775] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:31,688][INFO ][cluster.metadata         ] [Aegis] [1409146951.5265775] deleting index
+[2014-08-27 19:12:31,733][INFO ][cluster.metadata         ] [Aegis] [1409146951.704396] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:31,847][INFO ][cluster.metadata         ] [Aegis] [1409146951.704396] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:31,870][INFO ][cluster.metadata         ] [Aegis] [1409146951.704396] deleting index
+[2014-08-27 19:12:31,912][INFO ][cluster.metadata         ] [Aegis] [1409146951.8870032] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:32,027][INFO ][cluster.metadata         ] [Aegis] [1409146951.8870032] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:32,080][INFO ][cluster.metadata         ] [Aegis] [1409146951.8870032] deleting index
+[2014-08-27 19:12:46,158][INFO ][cluster.metadata         ] [Aegis] [1409146966.1413417] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:46,262][INFO ][cluster.metadata         ] [Aegis] [1409146966.1413417] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:46,286][INFO ][cluster.metadata         ] [Aegis] [1409146966.1413417] deleting index
+[2014-08-27 19:12:46,312][INFO ][cluster.metadata         ] [Aegis] [1409146966.1413417] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:46,363][INFO ][cluster.metadata         ] [Aegis] [1409146966.1413417] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:46,466][INFO ][cluster.metadata         ] [Aegis] [1409146966.450232] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:46,575][INFO ][cluster.metadata         ] [Aegis] [1409146966.450232] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:46,616][INFO ][cluster.metadata         ] [Aegis] [1409146966.450232] deleting index
+[2014-08-27 19:12:46,648][INFO ][cluster.metadata         ] [Aegis] [1409146966.6320028] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:46,759][INFO ][cluster.metadata         ] [Aegis] [1409146966.6320028] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:46,805][INFO ][cluster.metadata         ] [Aegis] [1409146966.6320028] deleting index
+[2014-08-27 19:12:46,841][INFO ][cluster.metadata         ] [Aegis] [1409146966.823754] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:47,093][INFO ][cluster.metadata         ] [Aegis] [1409146966.823754] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:47,139][INFO ][cluster.metadata         ] [Aegis] [1409146966.823754] deleting index
+[2014-08-27 19:12:47,163][INFO ][cluster.metadata         ] [Aegis] [1409146967.1456556] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:47,294][INFO ][cluster.metadata         ] [Aegis] [1409146967.1456556] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:47,340][INFO ][cluster.metadata         ] [Aegis] [1409146967.1456556] deleting index
+[2014-08-27 19:12:47,367][INFO ][cluster.metadata         ] [Aegis] [1409146967.1456556] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:47,419][INFO ][cluster.metadata         ] [Aegis] [1409146967.1456556] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:47,456][INFO ][cluster.metadata         ] [Aegis] [1409146967.4400697] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:47,613][INFO ][cluster.metadata         ] [Aegis] [1409146967.4400697] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:47,656][INFO ][cluster.metadata         ] [Aegis] [1409146967.4400697] deleting index
+[2014-08-27 19:12:52,333][INFO ][cluster.metadata         ] [Aegis] [1409146972.3161805] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:52,446][INFO ][cluster.metadata         ] [Aegis] [1409146972.3161805] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:52,476][INFO ][cluster.metadata         ] [Aegis] [1409146972.3161805] deleting index
+[2014-08-27 19:12:52,502][INFO ][cluster.metadata         ] [Aegis] [1409146972.3161805] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:52,558][INFO ][cluster.metadata         ] [Aegis] [1409146972.3161805] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:52,628][INFO ][cluster.metadata         ] [Aegis] [1409146972.6114094] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:52,761][INFO ][cluster.metadata         ] [Aegis] [1409146972.6114094] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:52,807][INFO ][cluster.metadata         ] [Aegis] [1409146972.6114094] deleting index
+[2014-08-27 19:12:52,845][INFO ][cluster.metadata         ] [Aegis] [1409146972.8274028] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:53,080][INFO ][cluster.metadata         ] [Aegis] [1409146972.8274028] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:53,132][INFO ][cluster.metadata         ] [Aegis] [1409146972.8274028] deleting index
+[2014-08-27 19:12:53,191][INFO ][cluster.metadata         ] [Aegis] [1409146973.1742473] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:53,303][INFO ][cluster.metadata         ] [Aegis] [1409146973.1742473] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:53,330][INFO ][cluster.metadata         ] [Aegis] [1409146973.1742473] deleting index
+[2014-08-27 19:12:53,358][INFO ][cluster.metadata         ] [Aegis] [1409146973.1742473] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:12:53,405][INFO ][cluster.metadata         ] [Aegis] [1409146973.1742473] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:53,465][INFO ][cluster.metadata         ] [Aegis] [1409146973.447738] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:53,590][INFO ][cluster.metadata         ] [Aegis] [1409146973.447738] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:53,639][INFO ][cluster.metadata         ] [Aegis] [1409146973.447738] deleting index
+[2014-08-27 19:12:53,672][INFO ][cluster.metadata         ] [Aegis] [1409146973.6551077] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:12:53,798][INFO ][cluster.metadata         ] [Aegis] [1409146973.6551077] update_mapping [invention] (dynamic)
+[2014-08-27 19:12:53,845][INFO ][cluster.metadata         ] [Aegis] [1409146973.6551077] deleting index
+[2014-08-27 19:13:08,434][INFO ][cluster.metadata         ] [Aegis] [1409146988.3085384] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:08,689][INFO ][cluster.metadata         ] [Aegis] [1409146988.3085384] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:08,720][INFO ][cluster.metadata         ] [Aegis] [1409146988.3085384] deleting index
+[2014-08-27 19:13:08,746][INFO ][cluster.metadata         ] [Aegis] [1409146988.7290013] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:08,856][INFO ][cluster.metadata         ] [Aegis] [1409146988.7290013] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:08,906][INFO ][cluster.metadata         ] [Aegis] [1409146988.7290013] deleting index
+[2014-08-27 19:13:08,953][INFO ][cluster.metadata         ] [Aegis] [1409146988.921624] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:09,058][INFO ][cluster.metadata         ] [Aegis] [1409146988.921624] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,081][INFO ][cluster.metadata         ] [Aegis] [1409146988.921624] deleting index
+[2014-08-27 19:13:09,113][INFO ][cluster.metadata         ] [Aegis] [1409146989.0966475] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:09,223][INFO ][cluster.metadata         ] [Aegis] [1409146989.0966475] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,383][INFO ][cluster.metadata         ] [Aegis] [1409146989.0966475] deleting index
+[2014-08-27 19:13:09,430][INFO ][cluster.metadata         ] [Aegis] [1409146989.0966475] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:09,476][INFO ][cluster.metadata         ] [Aegis] [1409146989.0966475] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,526][INFO ][cluster.metadata         ] [Aegis] [1409146989.508065] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:09,633][INFO ][cluster.metadata         ] [Aegis] [1409146989.508065] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,657][INFO ][cluster.metadata         ] [Aegis] [1409146989.508065] deleting index
+[2014-08-27 19:13:09,713][INFO ][cluster.metadata         ] [Aegis] [1409146989.6977854] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:09,817][INFO ][cluster.metadata         ] [Aegis] [1409146989.6977854] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,854][INFO ][cluster.metadata         ] [Aegis] [1409146989.6977854] deleting index
+[2014-08-27 19:13:09,892][INFO ][cluster.metadata         ] [Aegis] [1409146989.6977854] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:09,940][INFO ][cluster.metadata         ] [Aegis] [1409146989.6977854] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:09,980][INFO ][cluster.metadata         ] [Aegis] [1409146989.9649584] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:10,091][INFO ][cluster.metadata         ] [Aegis] [1409146989.9649584] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:10,116][INFO ][cluster.metadata         ] [Aegis] [1409146989.9649584] deleting index
+[2014-08-27 19:13:10,140][INFO ][cluster.metadata         ] [Aegis] [1409146990.124352] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:10,253][INFO ][cluster.metadata         ] [Aegis] [1409146990.124352] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:10,279][INFO ][cluster.metadata         ] [Aegis] [1409146990.124352] deleting index
+[2014-08-27 19:13:10,309][INFO ][cluster.metadata         ] [Aegis] [1409146990.2921915] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:10,529][INFO ][cluster.metadata         ] [Aegis] [1409146990.2921915] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:10,553][INFO ][cluster.metadata         ] [Aegis] [1409146990.2921915] deleting index
+[2014-08-27 19:13:10,617][INFO ][cluster.metadata         ] [Aegis] [1409146990.6014104] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:10,725][INFO ][cluster.metadata         ] [Aegis] [1409146990.6014104] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:10,760][INFO ][cluster.metadata         ] [Aegis] [1409146990.6014104] deleting index
+[2014-08-27 19:13:10,789][INFO ][cluster.metadata         ] [Aegis] [1409146990.7733965] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:10,901][INFO ][cluster.metadata         ] [Aegis] [1409146990.7733965] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:10,924][INFO ][cluster.metadata         ] [Aegis] [1409146990.7733965] deleting index
+[2014-08-27 19:13:10,959][INFO ][cluster.metadata         ] [Aegis] [1409146990.9427397] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:11,073][INFO ][cluster.metadata         ] [Aegis] [1409146990.9427397] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:11,143][INFO ][cluster.metadata         ] [Aegis] [1409146990.9427397] deleting index
+[2014-08-27 19:13:24,966][INFO ][cluster.metadata         ] [Aegis] [1409147004.9468913] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:25,066][INFO ][cluster.metadata         ] [Aegis] [1409147004.9468913] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:25,088][INFO ][cluster.metadata         ] [Aegis] [1409147004.9468913] deleting index
+[2014-08-27 19:13:25,113][INFO ][cluster.metadata         ] [Aegis] [1409147004.9468913] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:25,158][INFO ][cluster.metadata         ] [Aegis] [1409147004.9468913] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:25,252][INFO ][cluster.metadata         ] [Aegis] [1409147005.2364311] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:25,377][INFO ][cluster.metadata         ] [Aegis] [1409147005.2364311] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:25,420][INFO ][cluster.metadata         ] [Aegis] [1409147005.2364311] deleting index
+[2014-08-27 19:13:25,453][INFO ][cluster.metadata         ] [Aegis] [1409147005.4369576] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:25,681][INFO ][cluster.metadata         ] [Aegis] [1409147005.4369576] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:25,719][INFO ][cluster.metadata         ] [Aegis] [1409147005.4369576] deleting index
+[2014-08-27 19:13:25,766][INFO ][cluster.metadata         ] [Aegis] [1409147005.7359617] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:25,894][INFO ][cluster.metadata         ] [Aegis] [1409147005.7359617] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:25,935][INFO ][cluster.metadata         ] [Aegis] [1409147005.7359617] deleting index
+[2014-08-27 19:13:25,958][INFO ][cluster.metadata         ] [Aegis] [1409147005.943115] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:26,076][INFO ][cluster.metadata         ] [Aegis] [1409147005.943115] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:26,123][INFO ][cluster.metadata         ] [Aegis] [1409147005.943115] deleting index
+[2014-08-27 19:13:26,149][INFO ][cluster.metadata         ] [Aegis] [1409147005.943115] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:26,193][INFO ][cluster.metadata         ] [Aegis] [1409147005.943115] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:26,233][INFO ][cluster.metadata         ] [Aegis] [1409147006.216987] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:26,346][INFO ][cluster.metadata         ] [Aegis] [1409147006.216987] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:26,388][INFO ][cluster.metadata         ] [Aegis] [1409147006.216987] deleting index
+[2014-08-27 19:13:31,182][INFO ][cluster.metadata         ] [Aegis] [1409147011.166315] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:31,299][INFO ][cluster.metadata         ] [Aegis] [1409147011.166315] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:31,322][INFO ][cluster.metadata         ] [Aegis] [1409147011.166315] deleting index
+[2014-08-27 19:13:31,359][INFO ][cluster.metadata         ] [Aegis] [1409147011.166315] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:31,402][INFO ][cluster.metadata         ] [Aegis] [1409147011.166315] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:31,462][INFO ][cluster.metadata         ] [Aegis] [1409147011.4469597] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:31,579][INFO ][cluster.metadata         ] [Aegis] [1409147011.4469597] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:31,621][INFO ][cluster.metadata         ] [Aegis] [1409147011.4469597] deleting index
+[2014-08-27 19:13:31,661][INFO ][cluster.metadata         ] [Aegis] [1409147011.6386309] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:31,888][INFO ][cluster.metadata         ] [Aegis] [1409147011.6386309] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:31,929][INFO ][cluster.metadata         ] [Aegis] [1409147011.6386309] deleting index
+[2014-08-27 19:13:31,991][INFO ][cluster.metadata         ] [Aegis] [1409147011.9747415] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:32,096][INFO ][cluster.metadata         ] [Aegis] [1409147011.9747415] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:32,119][INFO ][cluster.metadata         ] [Aegis] [1409147011.9747415] deleting index
+[2014-08-27 19:13:32,149][INFO ][cluster.metadata         ] [Aegis] [1409147011.9747415] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-08-27 19:13:32,197][INFO ][cluster.metadata         ] [Aegis] [1409147011.9747415] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:32,439][INFO ][cluster.metadata         ] [Aegis] [1409147012.4154117] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:32,545][INFO ][cluster.metadata         ] [Aegis] [1409147012.4154117] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:32,610][INFO ][cluster.metadata         ] [Aegis] [1409147012.4154117] deleting index
+[2014-08-27 19:13:32,647][INFO ][cluster.metadata         ] [Aegis] [1409147012.6317372] creating index, cause [api], shards [1]/[1], mappings [invention]
+[2014-08-27 19:13:32,751][INFO ][cluster.metadata         ] [Aegis] [1409147012.6317372] update_mapping [invention] (dynamic)
+[2014-08-27 19:13:32,789][INFO ][cluster.metadata         ] [Aegis] [1409147012.6317372] deleting index
